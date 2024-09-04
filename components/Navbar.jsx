@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <nav>
             <img src="../images/react.svg" className="nav--logo" />
-            <img src="../images/airbnb-logo.
+            <img src="./airbnb-logo.
 png"className="nav--logo" />
             
         </nav>
