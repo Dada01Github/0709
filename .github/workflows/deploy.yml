@@ -23,6 +23,14 @@ jobs:
       - name: 构建项目
         run: npm run build
 
+      - name: 创建 .nojekyll 文件
+        run: touch dist/.nojekyll
+
+      - name: 检查构建输出
+        run: |
+          echo "检查dist目录内容："
+          ls -R dist
+
       - name: 部署到GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
